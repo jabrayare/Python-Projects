@@ -1,0 +1,12 @@
+<h1>Hey this post templates</h1>
+
+<p>This my name: {{ object.Name }}</p>
+<p>message: {{ object.Message }}</p>
+<p>email: {{ object.Email }}</p>
+
+{% for item in items %} {{ item.id }}
+<p>- {{ item.Name }}</p>
+<p>- {{ item.Email }}</p>
+<p>- {{ item.Message }}</p>
+<p>{{ item.id }} - <a href="{{ item.get_absolute_url }}">View</a></p>
+{% endfor %}

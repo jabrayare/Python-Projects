@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>{{ my_text}}</p>
+    {% for num in my_list %} {% if num == 7840 %}
+    <h5>{{ forloop.counter }} - {{ num|add:5 }} is rendered</h5>
+    {% else %}
+    <p>{{ forloop.counter }} - {{ num }}</p>
+    {% endif %} {% endfor %}
+    <h1>This is about page Tamplate</h1>
+  </body>
+</html>
+
+{% endblock %}

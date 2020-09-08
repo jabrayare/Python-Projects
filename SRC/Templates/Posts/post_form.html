@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+<!-- <form action="" method="Post"> -->
+<!-- {% csrf_token %} -->
+<!-- {{ form.as_p }} -->
+<!-- You need method="POST" and {% csrf_token % -> This is a security feature}, to actuall send your form data to the database. -->
+<!-- The form.as_p renders form with the fields specified in the form.py module. -->
+<!-- <input type="text" name="Name" placeholder="Your Name" />
+  <input type="email" name="Email" placeholder="your Email" />
+  <input type="text" name="Message" placeholder="Your message" />
+  -->
+<p>{{ obj.Name }}</p>
+<p>{{ obj.Email }}</p>
+<p>{{ obj.Message }}</p>
+<!-- <input type="submit" value="Save" /> -->
+<!-- </form> -->
+{% endblock%}

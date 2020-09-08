@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <h1>This is cool</h1>
+    <h2>I am developing in Django</h2>
+    <br />
+    <h3>Let's Goooooo &RightDoubleBracket;</h3>
+    {{request.user.is_authenticated}}
+  </body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base.html"%} {% block content %}
+
+<form action="" method="POST">
+  {% csrf_token %}
+  <p>{{ obj.Name }}</p>
+  <p>{{ obj.Email }}</p>
+  <p>{{ obj.Message }}</p>
+  <p><input type="submit" value="YES" /> <a href="../">Cancel</a></p>
+</form>
+
+{% endblock %}
